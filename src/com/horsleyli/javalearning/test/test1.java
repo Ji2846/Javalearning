@@ -1,4 +1,4 @@
-package com.horsleyli.javalearning.mainTest;
+package com.horsleyli.javalearning.test;
 
 public class test1{
     public static void main(String[] args){
