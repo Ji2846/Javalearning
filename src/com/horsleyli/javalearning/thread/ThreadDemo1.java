@@ -6,7 +6,8 @@ public class ThreadDemo1 extends Thread
     public void run()
     {
         // TODO: Implement this method
-        for(int i = 0; i < 10; i++){
+        for (int i = 0; i < 10; i++)
+        {
             System.out.println(this.toString() + " is running...");
         }
     }
