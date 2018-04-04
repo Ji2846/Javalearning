@@ -16,12 +16,14 @@ package com.horsleyli.javalearning.exceptions;
 
 public class Exception1 {
     public static void main(String[] args) {
-//        int[] arr = new int[1];
-//        System.out.println(arr[1]);
-//        java.lang.ArrayIndexOutOfBoundsException
-
-//        int[] arr = new int[1024*1024*1024];
-//        java.lang.OutOfMemoryError
+       /**
+       // int[] arr = new int[1];
+       // System.out.println(arr[1]);
+       // java.lang.ArrayIndexOutOfBoundsException
+       //
+       // int[] arr = new int[1024*1024*1024];
+       // java.lang.OutOfMemoryError
+       **/
 
     }
 }

@@ -32,30 +32,30 @@ public class Polymorphic1 {
 
     public static void main(String[] args) {
 
-//        非多态:
-//        Cat c = new Cat();
-//        c.eat();
+       // 非多态:
+       // Cat c = new Cat();
+       // c.eat();
 
-//        多态:
-//        Animal a = new Cat();
-//        a.eat();
+       // 多态:
+       // Animal a = new Cat();
+       // a.eat();
 
         eatMethod(new Cat());
         eatMethod(new Dog());
 
         Animal a = new Cat();
-//        向上转型.
-//        什么时候用?    需要提高程序的拓展性,隐藏具体子类型时.
+       // 向上转型.
+       // 什么时候用?    需要提高程序的拓展性,隐藏具体子类型时.
 
         Animal a1 = new Cat();
         Cat c = (Cat)a1;
-//        向下转型.
-//        什么时候用?    当需要使用子类型的特有方法时.
+       // 向下转型.
+       // 什么时候用?    当需要使用子类型的特有方法时.
         c.eat();
         c.catchMouse();
 
-//        向下转型前,必须对具体对象进行类型的判断(instanceof).
-//        为了避免运行时出现"ClassCastException".
+       // 向下转型前,必须对具体对象进行类型的判断(instanceof).
+       // 为了避免运行时出现"ClassCastException".
         Cat c1;
         if (a1 instanceof Cat) {
             c1 = (Cat)a1;
@@ -64,12 +64,12 @@ public class Polymorphic1 {
 
     }
 
-//    直接使用使用父类型调用子类.
+   // 直接使用使用父类型调用子类.
     public static void eatMethod(Animal a) {
         a.eat();
 
-//          只能使用覆盖了父类的方法.
-//        a.catchMouse();
+       //   只能使用覆盖了父类的方法.
+       // a.catchMouse();
 
     }
 }

@@ -17,7 +17,7 @@ public class InternalClass1 {
         out.method();
 
         Outer.Inner in = out.new Inner();
-//        创建内部类对象.
+       // 创建内部类对象.
         in.show();
     }
 }
@@ -25,33 +25,33 @@ public class InternalClass1 {
 class Outer {
     private int num = 1;
     class Inner {
-//        内部类
+       // 内部类
         void show() {
             System.out.println("Inner.show()\t" + num);
         }
 
-//        static int a = 1;
-//        static void method() {}
-//        非静态内部类中不允许声明静态变量或方法.
+       // static int a = 1;
+       // static void method() {}
+       // 非静态内部类中不允许声明静态变量或方法.
         static final int a = 1;
-//        非静态内部类中只能定义静态常量(final),其他静态修饰的成员都不允许.
+       // 非静态内部类中只能定义静态常量(final),其他静态修饰的成员都不允许.
     }
     void method() {
         System.out.println("Outer.method()");
         Inner in = new Inner();
-//        创建内部类对象来访问内部类.
+       // 创建内部类对象来访问内部类.
         in.show();
 
-//        内部类是静态时,访问非静态的方法.
+       // 内部类是静态时,访问非静态的方法.
         Outer1.staticInner staticIn = new Outer1.staticInner();
         staticIn.show1();
 
-//        内部类是静态时,访问静态的方法.
+       // 内部类是静态时,访问静态的方法.
         Outer1.staticInner.staticShow();
 
     }
 
-//    内部类还可以定义在局部中.
+   // 内部类还可以定义在局部中.
     void inMethod() {
         class inMehodClass {
             void doWork() {
@@ -61,7 +61,7 @@ class Outer {
 
 
 
-//        当方法定义在局部中时的调用方法.
+       // 当方法定义在局部中时的调用方法.
         new inMehodClass().doWork();
     }
 }
