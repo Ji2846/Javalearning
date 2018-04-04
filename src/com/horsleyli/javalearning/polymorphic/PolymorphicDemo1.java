@@ -1,4 +1,4 @@
-package Sejat.demo.polymorphic;
+package com.horsleyli.javalearning.polymorphic;
 
 class 毕姥爷 {
 
