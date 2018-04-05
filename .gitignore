@@ -1,3 +1,6 @@
+#Resources
+
+
 # Built Files
 *.class
 /out/
@@ -11,7 +14,7 @@ hs_err_pid*
 
 # Package Files
 # *.jar
-# *.zip
+*.zip
 *.war
 *.ear
 *.tar.gz
