@@ -1,7 +1,6 @@
 # Built Files
 *.class
 /out/
-/bin/
 
 # Log file
 *.log
@@ -9,10 +8,6 @@
 # Virtual Vachine crash logs,
 # See http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-
-# Intellij
-*.iml
-/.idea/
 
 # Package Files
 *.jar
@@ -22,9 +17,13 @@ hs_err_pid*
 *.tar.gz
 *.rar
 
+# Eclipse
+# .project
+# .classpath
+
+# Intellij
+# *.iml
+/.idea/
+
 # mpeltonen/sbt-idea plugin
 /.idea_modules/
-
-# Eclipse
-.project
-.classpath
