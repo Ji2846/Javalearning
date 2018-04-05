@@ -21,6 +21,6 @@ public class LoggerDemo1 {
 
         for (int i = 0; i < 9993; i++) {
             logger.info("Hello World!");
-        }s
+        }
     }
 }
