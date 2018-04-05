@@ -10,10 +10,10 @@
 hs_err_pid*
 
 # Package Files
-*.jar
+# *.jar
+# *.zip
 *.war
 *.ear
-*.zip
 *.tar.gz
 *.rar
 
@@ -22,7 +22,7 @@ hs_err_pid*
 # .classpath
 
 # Intellij
-# *.iml
+*.iml
 /.idea/
 
 # mpeltonen/sbt-idea plugin
