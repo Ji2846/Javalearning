@@ -11,5 +11,9 @@ public class LoggerDemo1 {
         logger.info("info level");
         logger.error("error level");
         logger.fatal("fatal level");
+
+        for (int i = 0; i < Short.MAX_VALUE; i++) {
+            logger.info("Hello World!");
+        }
     }
 }
