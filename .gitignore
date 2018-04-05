@@ -5,8 +5,9 @@
 *.class
 /out/
 
-# Log file
+# Logs file
 *.log
+/logs/
 
 # Virtual Vachine crash logs,
 # See http://www.java.com/en/download/help/error_hotspot.xml
