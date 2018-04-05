@@ -28,14 +28,11 @@ class TicketSeller1 implements Runnable {
         System.out.println(name + ": 一共卖出了" + soldTickets + "张票");
     }
 
-    int soldTickets = 0;
-    static int tickets = SimpleTicketSellerDemo1.TICKETS;
+    private int soldTickets = 0;
+    private static int tickets = SimpleTicketSellerDemo1.TICKETS;
 
     private boolean checkTicketCount() {
-        if (tickets > 0) {
-            return true;
-        }
-        return false;
+        return tickets > 0;
     }
 
     private void sellTickets() {
