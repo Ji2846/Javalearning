@@ -94,7 +94,7 @@ public class LoginWindow extends JFrame {
     }
 
     private void passwordWrong() {
-        Main.putLog("登陆失败！");
+        Main.putLog("登陆失败！\t" + "账号: [" + accountTextField.getText() + "]    密码: [" + getPassword() + "]");
         JOptionPane.showMessageDialog(loginButton, "登陆失败，账号或密码错误！", "登陆失败", JOptionPane.INFORMATION_MESSAGE);
         accountTextField.setText("");
         passwordField.setText("");
