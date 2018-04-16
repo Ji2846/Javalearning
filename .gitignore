@@ -1,19 +1,19 @@
-#Resources
+# Resources #
 log4j2_MD.xml
 
-# Built Files
+# Built Files #
 *.class
 /out/
 
-# Logs file
+# Logs Files #
 *.log
 /logs/
 
-# Virtual Vachine crash logs,
-# See http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual Vachine crash logs, #
+# See http://www.java.com/en/download/help/error_hotspot.xml #
 hs_err_pid*
 
-# Package Files
+# Package Files #
 # *.jar
 *.zip
 *.war
@@ -21,13 +21,13 @@ hs_err_pid*
 *.tar.gz
 *.rar
 
-# Eclipse
+# Eclipse Files #
 # .project
 # .classpath
 
-# Intellij
-*.iml
-/.idea/
+# Intellij Files #
+# *.iml
+# /.idea/
 
-# mpeltonen/sbt-idea plugin
+# mpeltonen/sbt-idea plugin #
 /.idea_modules/
