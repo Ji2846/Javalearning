@@ -87,6 +87,14 @@ public class LoginWindow extends JFrame {
     }
 
     private class PasswordChecker {
+        private void login() {
+            if (checkAccountAndPassword()) {
+                passwordCorrect();
+            } else {
+                passwordWrong();
+            }
+        }
+
         private boolean checkAccountAndPassword() {
             return "123".equals(accountTextField.getText()) && "123".equals(getPassword());
         }
@@ -111,9 +119,9 @@ public class LoginWindow extends JFrame {
     private class LoginButtonListener implements ActionListener, KeyListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (passwordChecker.checkAccountAndPassword()){
+            if (passwordChecker.checkAccountAndPassword()) {
                 passwordChecker.passwordCorrect();
-            }else{
+            } else {
                 passwordChecker.passwordWrong();
             }
         }
@@ -128,15 +136,18 @@ public class LoginWindow extends JFrame {
 
         @Override
         public void keyReleased(KeyEvent e) {
+            if (e.getKeyCode() == KeyEvent.VK_E) {
+
+            }
         }
     }
 
     private class AccountAndPasswordTextFileActionListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (e.getSource().equals(accountTextField)){
+            if (e.getSource().equals(accountTextField)) {
                 passwordField.requestFocus();
-            }else if (e.getSource().equals(passwordField)){
+            } else if (e.getSource().equals(passwordField)) {
                 loginButton.requestFocus();
             }
         }
