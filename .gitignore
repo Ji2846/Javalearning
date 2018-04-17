@@ -3,15 +3,15 @@
 hs_err_pid*
 
 # mpeltonen/sbt-idea plugin #
-.idea_modules/
+/.idea_modules/
 
 # Eclipse Files #
-.project
-.classpath
+#.project
+#.classpath
 
 # Intellij Files #
-*.iml
-.idea/
+#*.iml
+/.idea/
 
 # Built Files #
 *.class
@@ -20,7 +20,7 @@ out/
 # Logs Files #
 *.log
 *.log.gz
-.logs/
+/.logs/
 
 # Package Files #
 # *.jar
@@ -32,4 +32,3 @@ out/
 
 # Resources #
 apache-log4j-2.11.0-bin.zip
-.idea/workspace.xml
