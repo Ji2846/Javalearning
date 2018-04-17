@@ -66,6 +66,7 @@ public class LoginWindow extends JFrame {
         loginButton = new JButton("登陆");
         loginButton.setSize(70, 30);
         loginButton.setLocation(105, 90);
+        this.getRootPane().setDefaultButton(loginButton);
         loginButton.addActionListener(loginButtonListener);
         loginButton.addKeyListener(loginButtonListener);
     }
@@ -130,6 +131,7 @@ public class LoginWindow extends JFrame {
         public void keyPressed(KeyEvent e) {
             if (e.getKeyCode() == KeyEvent.VK_E) {
                 passwordChecker.login();
+                accountTextField.requestFocus();
             }
         }
 
