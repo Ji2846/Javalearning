@@ -12,7 +12,6 @@ hs_err_pid*
 # Intellij Files #
 #*.iml
 /.idea/
-#.idea/workspaces.xml
 
 # Built Files #
 *.class
