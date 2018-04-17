@@ -23,7 +23,7 @@ out/
 /.logs/
 
 #### Package Files ####
-# *.jar
+*.jar
 *.zip
 *.war
 *.ear
@@ -31,4 +31,7 @@ out/
 *.rar
 
 #### Resources ####
-#apache-log4j-2.11.0-bin.zip
+/resources/
+
+#### Libraries Jar ####
+!/lib/org.apache.logging.log4j2/
