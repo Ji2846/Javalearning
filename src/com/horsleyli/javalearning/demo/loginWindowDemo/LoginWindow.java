@@ -78,15 +78,15 @@ public class LoginWindow extends JFrame {
         loginWindowContainer.add(loginButton);
     }
 
-    private String getPassword() {
-        StringBuilder password = new StringBuilder();
-        for (char c : passwordField.getPassword()) {
-            password.append(c);
-        }
-        return password.toString();
-    }
-
     private class PasswordChecker {
+        private String getPassword() {
+            StringBuilder password = new StringBuilder();
+            for (char c : passwordField.getPassword()) {
+                password.append(c);
+            }
+            return password.toString();
+        }
+
         private void login() {
             if (checkAccountAndPassword()) {
                 passwordCorrect();
@@ -119,11 +119,7 @@ public class LoginWindow extends JFrame {
     private class LoginButtonListener implements ActionListener, KeyListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (passwordChecker.checkAccountAndPassword()) {
-                passwordChecker.passwordCorrect();
-            } else {
-                passwordChecker.passwordWrong();
-            }
+            passwordChecker.login();
         }
 
         @Override
@@ -132,13 +128,13 @@ public class LoginWindow extends JFrame {
 
         @Override
         public void keyPressed(KeyEvent e) {
+            if (e.getKeyCode() == KeyEvent.VK_E) {
+                passwordChecker.login();
+            }
         }
 
         @Override
         public void keyReleased(KeyEvent e) {
-            if (e.getKeyCode() == KeyEvent.VK_E) {
-
-            }
         }
     }
 
