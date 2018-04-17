@@ -1,0 +1,35 @@
+# Virtual Vachine crash logs, #
+# See http://www.java.com/en/download/help/error_hotspot.xml #
+hs_err_pid*
+
+# mpeltonen/sbt-idea plugin #
+/.idea_modules/
+
+# Eclipse Files #
+#.project
+#.classpath
+
+# Intellij Files #
+#*.iml
+/.idea/
+#.idea/workspaces.xml
+
+# Built Files #
+*.class
+out/
+
+# Logs Files #
+*.log
+*.log.gz
+/.logs/
+
+# Package Files #
+# *.jar
+*.zip
+*.war
+*.ear
+*.tar.gz
+*.rar
+
+# Resources #
+apache-log4j-2.11.0-bin.zip
