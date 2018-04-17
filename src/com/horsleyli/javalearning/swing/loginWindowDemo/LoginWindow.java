@@ -1,4 +1,4 @@
-package com.horsleyli.javalearning.demo.loginWindowDemo;
+package com.horsleyli.javalearning.swing.loginWindowDemo;
 
 import java.awt.*;
 import java.awt.event.*;

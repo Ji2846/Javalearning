@@ -1,7 +1,4 @@
-package com.horsleyli.javalearning.algorithm;
-
-import java.math.*;
-import java.util.*;
+package com.horsleyli.javalearning.demo;
 
 public class AlgorithmDemo
 {
