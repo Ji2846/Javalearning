@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3bc9219-0387-4f8f-8bd9-300392eb2df1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/horsleyli/javalearning/swing/loginWindowDemo/LoginWindow.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/horsleyli/javalearning/swing/loginWindowDemo/LoginWindow.java" afterPath="$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindow.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/horsleyli/javalearning/swing/loginWindowDemo/LoginWindowLauncher.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/com/horsleyli/javalearning/swing/loginWindowDemo/LoginWindowLauncher.java" afterPath="$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindowLauncher.java" />
+      <change beforePath="$PROJECT_DIR$/.classpath" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/log4j_api_2_11_0.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
     </list>
     <manually-removed-from-ignored>
       <directory path="$PROJECT_DIR$/bin/" />
@@ -19,7 +23,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LoginWindow.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LoginWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="665">
@@ -39,6 +43,16 @@
                 <element signature="method#loginButtonEnterKeyListener#0;class#LoginWindow#0" expanded="false" />
                 <element signature="class#myKeyListener#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="527">
+              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,8 +126,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-9" />
-    <option name="y" value="91" />
+    <option name="x" value="-7" />
+    <option name="y" value="90" />
     <option name="width" value="1046" />
     <option name="height" value="904" />
   </component>
@@ -240,36 +254,6 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
               <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="loginWindowDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="loginWindowDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginWindow.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -744,7 +728,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="91" width="1046" height="904" extended-state="1" />
+    <frame x="-7" y="90" width="1046" height="904" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -985,6 +969,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
           <caret line="160" column="28" lean-forward="true" selection-start-line="160" selection-start-column="28" selection-end-line="160" selection-end-column="28" />
+          <folding>
+            <element signature="e#22247#22248#0" expanded="false" />
+            <element signature="e#22278#22279#0" expanded="false" />
+            <element signature="e#23469#23470#0" expanded="false" />
+            <element signature="e#23522#23523#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -999,6 +989,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="292" column="50" lean-forward="false" selection-start-line="292" selection-start-column="50" selection-end-line="292" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1006,6 +997,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="163" column="13" lean-forward="false" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1059,13 +1051,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Launcher.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/horsleyli/javalearning/logger/LoggerDemo1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -1141,6 +1126,14 @@
             <element signature="method#loginButtonEnterKeyListener#0;class#LoginWindow#0" expanded="false" />
             <element signature="class#myKeyListener#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
