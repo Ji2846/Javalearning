@@ -19,7 +19,8 @@ hs_err_pid*
 
 # Logs Files #
 *.log
-/logs/
+*.log.gz
+/.logs/
 
 # Package Files #
 # *.jar

@@ -3,7 +3,7 @@ package com.horsleyli.javalearning.swing.loginWindowDemo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Main {
+public class LoginWindowLauncher {
     public static void main(String[] args) {
         LoginWindow loginWindow = new LoginWindow();
         loginWindow.createLoginWindow();
