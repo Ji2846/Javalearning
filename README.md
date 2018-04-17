@@ -1,2 +1,2 @@
 # Javalearning
-[Github地址](https://github.com/Ji2846/JavaLearning)
+[Github仓库](https://github.com/Ji2846/JavaLearning)
