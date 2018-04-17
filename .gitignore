@@ -1,50 +1,34 @@
-#######################################
-# Virtual Vachine crash logs, #
-# See http://www.java.com/en/download/help/error_hotspot.xml #
+#### Virtual Vachine crash logs, ####
+#### See http://www.java.com/en/download/help/error_hotspot.xml ####
 hs_err_pid*
-#######################################
 
-#######################################
-# mpeltonen/sbt-idea plugin #
+#### mpeltonen/sbt-idea plugin ####
 /.idea_modules/
-#######################################
 
-#######################################
-# Eclipse Files #
+#### Eclipse Files ####
 .project
 .classpath
-#######################################
 
-#######################################
-# Intellij Files #
+#### Intellij Files ####
 #*.iml
 /.idea/
-#######################################
 
-#######################################
-# Built Files #
+#### Built Files ####
 *.class
 out/
-#######################################
 
-#######################################
-# Logs Files #
+#### Logs Files #####
 *.log
 *.log.gz
 /.logs/
-#######################################
 
-#######################################
-# Package Files #
+#### Package Files ####
 # *.jar
 *.zip
 *.war
 *.ear
 *.tar.gz
 *.rar
-#######################################
 
-#######################################
-# Resources #
-apache-log4j-2.11.0-bin.zip
-#######################################
+#### Resources ####
+#apache-log4j-2.11.0-bin.zip
