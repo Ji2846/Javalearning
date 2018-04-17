@@ -3,7 +3,7 @@
 hs_err_pid*
 
 # mpeltonen/sbt-idea plugin #
-/.idea_modules/
+.idea_modules/
 
 # Eclipse Files #
 .project
@@ -11,16 +11,16 @@ hs_err_pid*
 
 # Intellij Files #
 *.iml
-/.idea/
+.idea/
 
 # Built Files #
 *.class
-/out/
+out/
 
 # Logs Files #
 *.log
 *.log.gz
-/.logs/
+.logs/
 
 # Package Files #
 # *.jar
