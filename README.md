@@ -1,2 +1,3 @@
 # Javalearning
-<a herf="https://github.com/Ji2846/JavaLearning"><img src="https://github.com/fluidicon.png" height="16"></a>[Github仓库](https://github.com/Ji2846/JavaLearning)
+[Github仓库](https://github.com/Ji2846/JavaLearning)
+<a herf="https://github.com/Ji2846/JavaLearning">Github仓库</a>
