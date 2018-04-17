@@ -24,6 +24,11 @@ public class LoginWindow extends JFrame {
     private JPasswordField passwordField;
     private JButton loginButton;
 
+    private PasswordChecker passwordChecker = this.new PasswordChecker();
+
+    private LoginButtonListener loginButtonListener = this.new LoginButtonListener();
+    private AccountAndPasswordTextFileActionListener accountAndPasswordTextFileActionListener = this.new AccountAndPasswordTextFileActionListener();
+
     private void painWindow() {
         setContainer();
         setLabel();
@@ -50,19 +55,19 @@ public class LoginWindow extends JFrame {
         accountTextField = new JTextField();
         accountTextField.setSize(140, 28);
         accountTextField.setLocation(90, 14);
-        accountTextField.addActionListener(enterKeyListener(accountTextField));
+        accountTextField.addActionListener(accountAndPasswordTextFileActionListener);
         passwordField = new JPasswordField();
         passwordField.setSize(140, 28);
         passwordField.setLocation(90, 54);
-        passwordField.addActionListener(enterKeyListener(passwordField));
+        passwordField.addActionListener(accountAndPasswordTextFileActionListener);
     }
 
     private void setButton() {
         loginButton = new JButton("登陆");
         loginButton.setSize(70, 30);
         loginButton.setLocation(105, 90);
-        loginButton.addActionListener(loginButtonListener());
-        loginButton.addKeyListener(loginButtonEnterKeyListener());
+        loginButton.addActionListener(loginButtonListener);
+        loginButton.addKeyListener(loginButtonListener);
     }
 
     private void addComponents() {
@@ -81,69 +86,59 @@ public class LoginWindow extends JFrame {
         return password.toString();
     }
 
-    private boolean checkAccountAndPassword() {
-        return "123".equals(accountTextField.getText()) && "123".equals(getPassword());
+    private class PasswordChecker {
+        private boolean checkAccountAndPassword() {
+            return "123".equals(accountTextField.getText()) && "123".equals(getPassword());
+        }
+
+        private void passwordCorrect() {
+            JOptionPane.showMessageDialog(loginButton, "登陆成功！", "登陆成功", JOptionPane.INFORMATION_MESSAGE);
+            LoginWindowLauncher.putLog("登陆成功！");
+            accountTextField.setText("");
+            passwordField.setText("");
+            accountTextField.requestFocusInWindow();
+        }
+
+        private void passwordWrong() {
+            JOptionPane.showMessageDialog(loginButton, "登陆失败，账号或密码错误！", "登陆失败", JOptionPane.INFORMATION_MESSAGE);
+            LoginWindowLauncher.putLog("登陆失败！\t" + "账号: \"" + accountTextField.getText() + "\"    密码: \"" + getPassword() + "\"");
+            accountTextField.setText("");
+            passwordField.setText("");
+            accountTextField.requestFocusInWindow();
+        }
     }
 
-    private void passwordCorrect() {
-        LoginWindowLauncher.putLog("登陆成功！");
-        JOptionPane.showMessageDialog(loginButton, "登陆成功！", "登陆成功", JOptionPane.INFORMATION_MESSAGE);
-        accountTextField.setText("");
-        passwordField.setText("");
-        accountTextField.requestFocusInWindow();
-    }
-
-    private void passwordWrong() {
-        LoginWindowLauncher.putLog("登陆失败！\t" + "账号: \"" + accountTextField.getText() + "\"    密码: \"" + getPassword() + "\"");
-        JOptionPane.showMessageDialog(loginButton, "登陆失败，账号或密码错误！", "登陆失败", JOptionPane.INFORMATION_MESSAGE);
-        accountTextField.setText("");
-        passwordField.setText("");
-        accountTextField.requestFocusInWindow();
-    }
-
-    private ActionListener loginButtonListener() {
-        return e -> {
-            if (checkAccountAndPassword())
-                passwordCorrect();
-            else
-                passwordWrong();
-        };
-    }
-
-    private ActionListener enterKeyListener(Component component) {
-        return e -> {
-            if (accountTextField.equals(component))
-                passwordField.requestFocusInWindow();
-            if (passwordField.equals(component)) {
-                loginButton.requestFocusInWindow();
+    private class LoginButtonListener implements ActionListener, KeyListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (passwordChecker.checkAccountAndPassword()){
+                passwordChecker.passwordCorrect();
+            }else{
+                passwordChecker.passwordWrong();
             }
-        };
+        }
+
+        @Override
+        public void keyTyped(KeyEvent e) {
+        }
+
+        @Override
+        public void keyPressed(KeyEvent e) {
+        }
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+        }
     }
 
-    private KeyListener loginButtonEnterKeyListener() {
-        return new myKeyListener() {
-            @Override
-            public void keyPressed(KeyEvent e) {
-                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    if (checkAccountAndPassword()) {
-                        passwordCorrect();
-                    } else {
-                        passwordWrong();
-                    }
-                }
+    private class AccountAndPasswordTextFileActionListener implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            if (e.getSource().equals(accountTextField)){
+                passwordField.requestFocus();
+            }else if (e.getSource().equals(passwordField)){
+                loginButton.requestFocus();
             }
-        };
-    }
-}
-
-class myKeyListener implements KeyListener{
-    @Override
-    public void keyPressed(KeyEvent e) {
-    }
-    @Override
-    public void keyReleased(KeyEvent e) {
-    }
-    @Override
-    public void keyTyped(KeyEvent e) {
+        }
     }
 }

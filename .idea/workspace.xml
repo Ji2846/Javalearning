@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3bc9219-0387-4f8f-8bd9-300392eb2df1" name="Default" comment="Hi">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/log4j_api_2_11_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaLearning.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/apache-log4j-2.11.0-bin.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindow.java" afterDir="false" />
     </list>
     <manually-removed-from-ignored>
@@ -28,20 +20,8 @@
       <file leaf-file-name="LoginWindow.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-              <folding>
-                <element signature="method#createLoginWindow#0;class#LoginWindow#0" />
-                <element signature="method#createFrame#0;class#LoginWindow#0" />
-                <element signature="method#painWindow#0;class#LoginWindow#0" />
-                <element signature="method#setLabel#0;class#LoginWindow#0" />
-                <element signature="method#setInputField#0;class#LoginWindow#0" />
-                <element signature="method#setButton#0;class#LoginWindow#0" />
-                <element signature="method#addComponents#0;class#LoginWindow#0" />
-                <element signature="method#getPassword#0;class#LoginWindow#0" />
-                <element signature="method#checkAccountAndPassword#0;class#LoginWindow#0" />
-                <element signature="method#enterKeyListener#0;class#LoginWindow#0" />
-              </folding>
+            <state relative-caret-position="171">
+              <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -51,6 +31,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="e#484#485#0" expanded="true" />
+                <element signature="e#520#521#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,7 +202,84 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
+              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="loginWindowDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="$project_name$" type="58d84e3e:PackageViewProjectNode" />
+              <item name="$project_name$" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="$project_name$" type="58d84e3e:PackageViewProjectNode" />
+              <item name="$project_name$" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="$project_name$" type="58d84e3e:PackageViewProjectNode" />
+              <item name="$project_name$" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+              <item name="horsleyli" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -292,95 +353,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="loginWindowDemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="b2602c69:ProjectViewProjectNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="horsleyli" type="462c0819:PsiDirectoryNode" />
-              <item name="$project_name$" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="loginWindowDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="LoginWindow.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="$project_name$" type="58d84e3e:PackageViewProjectNode" />
-              <item name="$project_name$" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="58d84e3e:PackageViewProjectNode" />
-              <item name="$project_name$" type="616d4139:PackageViewModuleNode" />
-              <item name="com" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="$project_name$" type="58d84e3e:PackageViewProjectNode" />
-              <item name="$project_name$" type="616d4139:PackageViewModuleNode" />
-              <item name="com" type="1f31426a:PackageElementNode" />
-              <item name="horsleyli" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,7 +367,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -553,6 +526,7 @@
       <updated>1522861142749</updated>
       <workItem from="1523956330778" duration="477000" />
       <workItem from="1523956826980" duration="709000" />
+      <workItem from="1523957551572" duration="1001000" />
     </task>
     <task id="LOCAL-00001" summary="hi">
       <created>1522866002122</created>
@@ -698,7 +672,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1186000" />
+    <option name="totallyTimeSpent" value="2187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -706,7 +680,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32980973" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
@@ -718,7 +691,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13697916" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13697916" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info id="Learn" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -733,35 +706,36 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32980973" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="Designer" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3299748" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48834953" visible="true" weight="0.18010075" />
       <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553398" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48834953" visible="true" weight="0.18010075" />
       <window_info id="Image Layers" order="7" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3299748" />
+      <window_info id="Learn" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39924434" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5116505" side_tool="true" weight="0.18010075" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3299748" />
+      <window_info id="Capture Tool" order="2" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3299748" />
       <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info id="Learn" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -779,26 +753,32 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindow.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="893">
+          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindowLauncher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="741">
           <caret line="95" column="27" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="27" />
-          <folding>
-            <element signature="method#createLoginWindow#0;class#LoginWindow#0" />
-            <element signature="method#createFrame#0;class#LoginWindow#0" />
-            <element signature="method#painWindow#0;class#LoginWindow#0" />
-            <element signature="method#setLabel#0;class#LoginWindow#0" />
-            <element signature="method#setInputField#0;class#LoginWindow#0" />
-            <element signature="method#setButton#0;class#LoginWindow#0" />
-            <element signature="method#addComponents#0;class#LoginWindow#0" />
-            <element signature="method#getPassword#0;class#LoginWindow#0" />
-            <element signature="method#checkAccountAndPassword#0;class#LoginWindow#0" />
-            <element signature="method#enterKeyListener#0;class#LoginWindow#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -983,25 +963,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="e#484#485#0" expanded="true" />
+            <element signature="e#520#521#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/horsleyli/javalearning/demo/loginWindowDemo/LoginWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
-          <folding>
-            <element signature="method#createLoginWindow#0;class#LoginWindow#0" />
-            <element signature="method#createFrame#0;class#LoginWindow#0" />
-            <element signature="method#painWindow#0;class#LoginWindow#0" />
-            <element signature="method#setLabel#0;class#LoginWindow#0" />
-            <element signature="method#setInputField#0;class#LoginWindow#0" />
-            <element signature="method#setButton#0;class#LoginWindow#0" />
-            <element signature="method#addComponents#0;class#LoginWindow#0" />
-            <element signature="method#getPassword#0;class#LoginWindow#0" />
-            <element signature="method#checkAccountAndPassword#0;class#LoginWindow#0" />
-            <element signature="method#enterKeyListener#0;class#LoginWindow#0" />
-          </folding>
+        <state relative-caret-position="171">
+          <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
         </state>
       </provider>
     </entry>
