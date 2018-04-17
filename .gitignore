@@ -1,26 +1,9 @@
-# Resources #
-log4j2_MD.xml
-apache-log4j-2.11.0-bin.zip
-
-# Built Files #
-*.class
-/out/
-
-# Logs Files #
-*.log
-/logs/
-
 # Virtual Vachine crash logs, #
 # See http://www.java.com/en/download/help/error_hotspot.xml #
 hs_err_pid*
 
-# Package Files #
-# *.jar
-*.zip
-*.war
-*.ear
-*.tar.gz
-*.rar
+# mpeltonen/sbt-idea plugin #
+/.idea_modules/
 
 # Eclipse Files #
 # .project
@@ -30,5 +13,21 @@ hs_err_pid*
 # *.iml
 # /.idea/
 
-# mpeltonen/sbt-idea plugin #
-/.idea_modules/
+# Built Files #
+*.class
+/out/
+
+# Logs Files #
+*.log
+/logs/
+
+# Package Files #
+# *.jar
+*.zip
+*.war
+*.ear
+*.tar.gz
+*.rar
+
+# Resources #
+apache-log4j-2.11.0-bin.zip
