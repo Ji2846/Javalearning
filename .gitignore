@@ -12,6 +12,13 @@ hs_err_pid*
 # Intellij Files #
 # *.iml
 # /.idea/
+/.idea/codeStyles/
+.idea/compiler.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/uiDesigner.xml
+.idea/vcs.xml
+.idea/workspace.xml
 
 # Built Files #
 *.class

@@ -1,4 +1,4 @@
-package com.horsleyli.javalearning.api;
+package com.horsleyli.javalearning.demo;
 
 /**
  * StringBuffer: 字符串缓冲区.
