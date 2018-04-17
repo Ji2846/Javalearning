@@ -1,4 +1,4 @@
-package com.horsleyli.javalearning.swing.loginWindowDemo;
+package com.horsleyli.javalearning.demo.loginWindowDemo;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
