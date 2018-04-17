@@ -6,8 +6,8 @@ hs_err_pid*
 /.idea_modules/
 
 # Eclipse Files #
-#.project
-#.classpath
+.project
+.classpath
 
 # Intellij Files #
 #*.iml
@@ -31,4 +31,4 @@ out/
 *.rar
 
 # Resources #
-apache-log4j-2.11.0-bin.zip
+#apache-log4j-2.11.0-bin.zip
