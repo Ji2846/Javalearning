@@ -34,4 +34,5 @@ out/
 /resources/
 
 #### Libraries Jar ####
-!/lib/org.apache.logging.log4j2/
+!/lib/org.apache.logging.log4j2/log4j-api-2.11.0.jar
+!/lib/org.apache.logging.log4j2/log4j-core-2.11.0.jar
