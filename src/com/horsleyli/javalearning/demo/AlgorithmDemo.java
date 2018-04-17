@@ -1,32 +1,28 @@
 package com.horsleyli.javalearning.demo;
 
-public class AlgorithmDemo
-{
-    public static void main(String[] args)
-    {
+public class AlgorithmDemo {
+    public static void main(String[] args) {
         AlgorithmDemo a = new AlgorithmDemo();
-        System.out.println(a.euclideanAlgorithm(6105, 8251));
-        System.out.println(a.euclideanAlgorithm(957, 693));
+        a.euclideanAlgorithm(415, 6460);
+        a.euclideanAlgorithm(48484, 84);
     }
 
-    public int euclideanAlgorithm(int a, int b)
-    {
-        // 欧几里德算法
+    public void euclideanAlgorithm(int a, int b) {
+        // 欧几里德算法，输出两个数的最大公约数
+        int na = a;
+        int nb = b;
         int r = -1;
-        if (b > a)
-        {
-            // 判断a b大小,保证a>b
+        if (b > a) {
+            // 判断a、b的大小，保证a>b
             int t = b;
             b = a;
             a = t;
         }
-
-        while (r != 0)
-        {
+        while (r != 0) {
             r = a % b;
             a = b;
             b = r;
         }
-        return a;
+        System.out.println(na + "与" + nb + "的最大公约数是: " + a);
     }
 }
