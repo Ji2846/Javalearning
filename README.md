@@ -1,3 +1,3 @@
-# Javalearning
-[Github仓库](https://github.com/Ji2846/JavaLearning)  
-Clone: https://github.com/Ji2846/JavaLearning.git
+# JavaLearning  
+##### Github Page: https://github.com/Ji2846/JavaLearning    
+##### Git Clone: https://github.com/Ji2846/JavaLearning.git  
