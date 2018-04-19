@@ -1,11 +1,7 @@
 package com.horsleyli.javalearning.swing.loginWindowDemo;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-
+import java.awt.event.*;
 import javax.swing.*;
 
 import org.apache.logging.log4j.LogManager;
@@ -47,6 +43,7 @@ class LoginWindow extends JFrame {
     private JPasswordField passwordField;
     private JButton loginButton;
 
+    // 声明进行密码操作的私有对象
     private PasswordOperator passwordOperator = this.new PasswordOperator();
 
     // 声明事件监听者

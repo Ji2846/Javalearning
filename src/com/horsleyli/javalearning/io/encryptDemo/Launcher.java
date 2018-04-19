@@ -1,10 +1,8 @@
 package com.horsleyli.javalearning.io.encryptDemo;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import java.io.*;
-
 import javax.swing.*;
 
 public class Launcher {
@@ -33,6 +31,8 @@ class MainWindow extends JFrame {
         setVisible(true);
     }
 
+
+    // 绘制窗口及给窗口添加组件
     private void drawFrame() {
         // 绘制Frame
         setLayout(null);
@@ -52,11 +52,13 @@ class MainWindow extends JFrame {
         contentPane.add(readTextAreaScrollPane);
     }
 
+    // 声明窗口的组件及所需资源
     private JTextArea inputTextArea, readTextArea;
     private JButton writeButton, readButton;
     private JScrollPane inputTextAreaScrollPane, readTextAreaScrollPane;
     private Font yaHeiFont = new Font("微软雅黑", Font.PLAIN, 14);
 
+    // 进行组件绘制的一些方法
     private void setButtons() {
         Color buttonColor = new Color(0xE3E3E3);
         // 设置Button
@@ -98,6 +100,7 @@ class MainWindow extends JFrame {
         readTextAreaScrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED);
     }
 
+    // 负责监听事件的一些内部类
     private class WriteButtonActionListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -111,6 +114,7 @@ class MainWindow extends JFrame {
         private void writeData() {
             // 写入数据
             String data = inputTextArea.getText();
+            // 将数据加密后写入
             try {
                 BufferedWriter writer = new BufferedWriter(new FileWriter(targetFile, true));
                 writer.write(DataProcessor.encrypt(data));
@@ -137,6 +141,7 @@ class MainWindow extends JFrame {
             // 读取数据
             String readData;
             StringBuilder text = new StringBuilder();
+            // 读入数据并进行解密
             try {
                 BufferedReader reader = new BufferedReader(new FileReader(targetFile));
                 while ((readData = reader.readLine()) != null) {

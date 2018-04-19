@@ -1,4 +1,4 @@
-package com.horsleyli.javalearning.logger;
+package com.horsleyli.javalearning.demo;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -6,6 +6,7 @@ import org.apache.logging.log4j.Logger;
 public class LoggerDemo1 {
     public static void main(String[] args) {
         Logger logger = LogManager.getLogger(LoggerDemo1.class);
+        // log的各种等级
         // trace：追踪，就是程序推进一下，可以写个trace输出，基本不用
         logger.trace("trace level");
         // debug：调试，一般作为最低级别
@@ -19,6 +20,7 @@ public class LoggerDemo1 {
         // fatal：致命错误。级别较高，这种级别不用调试了，重写吧……
         logger.fatal("fatal level");
 
+        // 循环输出log
         for (int i = 0; i < 9993; i++) {
             logger.info("Hello World!");
         }
