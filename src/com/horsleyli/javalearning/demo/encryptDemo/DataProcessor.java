@@ -1,4 +1,4 @@
-package com.horsleyli.javalearning.io.encryptDemo;
+package com.horsleyli.javalearning.demo.encryptDemo;
 
 class DataProcessor {
     static String encrypt(String unencryptedData) {
