@@ -21,6 +21,7 @@ package com.horsleyli.javalearning.collection;
  * public boolean contains(Arg arg)     // 判断链表是否包含此数据；
  * public Arg get(int index)            // 根据索引取得数据；
  * public void set(int index, Arg arg)  // 修改指定索引的数据；
+ *
  **/
 
 public class LinkDemo2 {
