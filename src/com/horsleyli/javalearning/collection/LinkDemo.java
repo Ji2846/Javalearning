@@ -1,5 +1,12 @@
 package com.horsleyli.javalearning.collection;
 
+/*
+* 可以通过此Demo发现链表的基本操作特点：
+* * 客户端代码不用去关注具体节点及引用关系的细节，自关注于其提供的功能
+* * Link类的主要功能是控制Node类对象的产生和根节点
+* * Node类主要负责数据的保存及其引用关系的分配.
+* */
+
 public class LinkDemo {
     // 链表
     public static void main(String[] args) {
@@ -13,14 +20,14 @@ public class LinkDemo {
         Node n3 = new Node("3号格");
         Node end = new Node("链表尾");
 
-        Link link = new Link();
-        link.add(root);
-        link.add(n1);
-        link.add(n2);
-        link.add(n3);
-        link.add(end);
+        Link1 link2 = new Link1();
+        link2.add(root);
+        link2.add(n1);
+        link2.add(n2);
+        link2.add(n3);
+        link2.add(end);
 
-        link.print();
+        link2.print();
     }
 }
 
@@ -48,8 +55,9 @@ class Node {
     }
 }
 
-class Link {    // 负责元素操作的类
-    private Node root;    // 根节点
+// 负责元素操作的类
+class Link1 {
+    private Node root;      // 根节点
 
     // 添加元素
     void add(Node newNode) {
