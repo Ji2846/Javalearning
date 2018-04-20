@@ -1,7 +1,7 @@
 package com.horsleyli.javalearning.collection;
 
 /*
- * 开发一个具体可用的链表（增减改等功能）
+ * 开发一个具体可用的链表（增删查改等基础功能）
  *
  * Node负责的所有节点数据的保存及节点关系的匹配，所以理论上Node类是不能单独使用的
  * 所以需要修改结构，让Node类只能被Link类操作，
@@ -12,8 +12,10 @@ package com.horsleyli.javalearning.collection;
  *
  ***************************************
  * 链表常用方法：
- * public void add(Arg arg)    增加数据；
- * public int size()           取得链表中保存元素的个数；
+ * public void add(Arg arg)         // 增加数据；
+ * public int size()                // 取得链表中保存元素的个数；
+ * public boolean isEmpty()         // 判断链表是否为空；
+ * public boolean contains(Arg arg) // 判断链表是否包含此数据；
  * */
 
 public class LinkDemo2 {
@@ -26,7 +28,10 @@ public class LinkDemo2 {
         link.add(null); // null并不会被保存（我是这么设定的XD）
         link.add("end");
 
-        System.out.println(link.getSize()); // 获取链表中保存的数据量
+        System.out.println("link.getSize(): " + link.getSize());  // 获取链表中保存的数据量
+        System.out.println("link.isEmpty(): " + link.isEmpty());  // 判断链表是否为空
+        System.out.println("ling.contains(\"2\"): " + link.contains("2"));    // 判断链表中是否包含此数据
+        System.out.println("ling.contains(\"4\"): " + link.contains("4"));
     }
 }
 
@@ -48,6 +53,26 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
             }
         }
 
+        @Override
+        public boolean equals(Object obj) {
+            if (obj instanceof Node) {
+                return this.data.equals(((Node) obj).data);
+            } else {
+                return false;
+            }
+        }
+
+        private boolean containsNode(String data) {
+            if (this.data.equals(data)) {   // 先判断当前data是否相等
+                return true;    //当满足时就不再继续判断了，直接返回true；
+            } else {    // 若当前节点不满足则查询下一个节点
+                if (this.next != null) {    // 要是有后续节点
+                    return this.next.containsNode(data);    // 就继续查询
+                } else {
+                    return false;   // 否则就直接返回false（后面没数据继续给你查询了）
+                }
+            }
+        }
     }
     /* ===================== 以上为内部类 ===================== */
 
@@ -65,10 +90,34 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
             this.root.addNode(newNode);
         }
 
-        this.size++;   // 每一次保存成功后count + 1;
+        this.size++;   // 每一次保存成功后size + 1;
     }
 
     public int getSize() {
-        return this.size;
+        return this.size;   // 返回size
+    }
+
+    public boolean isEmpty() {
+        /*
+         * 两种判断方法：
+         * * 一、root是否为null；
+         * * 二、size是否为0；
+         * 这里采取的是第二种（参照String类）
+         * */
+        return size == 0;
+    }
+
+    public boolean contains(String data) {    // 用data进行比较
+        /*
+         * 通过比较节点的data是否相等以进行判断两节点是否相等
+         *
+         * 如果不是通过String进行比较而是通过自定义对象进行比较，
+         * 则可以通过定义一个对象比较的方法(例如compare()方法)
+         * */
+        if (data == null || this.root == null) {
+            return false;   // 如果比较和被比较的数据为空，则直接返回false
+        } else {
+            return root.containsNode(data);
+        }
     }
 }
