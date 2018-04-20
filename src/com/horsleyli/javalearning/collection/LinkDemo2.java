@@ -1,36 +1,41 @@
 package com.horsleyli.javalearning.collection;
 
-/*
- * 开发一个具体可用的链表（增删查改等基础功能）
+/**
+ * 开发一个具体可用的链表（增删查改等基础功能）:
  *
  * Node负责的所有节点数据的保存及节点关系的匹配，所以理论上Node类是不能单独使用的
  * 所以需要修改结构，让Node类只能被Link类操作，
  * 这时候使用内部类明显是一个最好的选择。
  * 内部类可以用private定义，这样一来：
- * * 一、Nodeiu不能被其它类给修改
- * * 二、内部类还可以很方便的与外部类进行交互
- *
- ***************************************
+ * 一、Nodeiu不能被其它类给修改
+ * 二、内部类还可以很方便的与外部类进行交互
+ **/
+
+/* =================================== */
+
+/**
+ * ***********************************
  * 链表常用方法：
  * public void add(Arg arg)         // 增加数据；
  * public int size()                // 取得链表中保存元素的个数；
  * public boolean isEmpty()         // 判断链表是否为空；
  * public boolean contains(Arg arg) // 判断链表是否包含此数据；
- * */
+ * public Arg get(int index)        // 根据索引取得数据；
+ **/
 
 public class LinkDemo2 {
     public static void main(String[] args) {
-        Link2 link = new Link2();   // 创建链表对象
+        Link2 link = new Link2();   // 创建一个链表
         link.add("root");   // 给链表添加元素
         link.add("1");
         link.add("2");
         link.add("3");
-        link.add(null); // null并不会被保存（我是这么设定的XD）
+        link.add(null); // 尝试添加null，不过并不会成功（我是这么设定的XD）
         link.add("end");
 
-        System.out.println("link.getSize(): " + link.getSize());  // 获取链表中保存的数据量
-        System.out.println("link.isEmpty(): " + link.isEmpty());  // 判断链表是否为空
-        System.out.println("ling.contains(\"2\"): " + link.contains("2"));    // 判断链表中是否包含此数据
+        System.out.println("link.getSize(): " + link.getSize());                // 获取链表中保存的数据量
+        System.out.println("link.isEmpty(): " + link.isEmpty());                // 判断链表是否为空
+        System.out.println("ling.contains(\"2\"): " + link.contains("2"));      // 判断链表中是否包含此数据
         System.out.println("ling.contains(\"4\"): " + link.contains("4"));
     }
 }
@@ -76,8 +81,8 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
     }
     /* ===================== 以上为内部类 ===================== */
 
-    private Node root;    // 根节点
-    private int size = 0;  // 保存的元素个数
+    private Node root;           // 根节点
+    private int size = 0;                 // 保存的元素个数
 
     public void add(String data) {    // 添加节点
         if (data == null) {
