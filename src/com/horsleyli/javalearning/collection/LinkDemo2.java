@@ -1,8 +1,7 @@
 package com.horsleyli.javalearning.collection;
 
 /**
- * 开发一个具体可用的链表（增删查改等基础功能）:
- *
+ * 开发一个具体可用的链表（增删查改取等基础功能）:
  * Node负责的所有节点数据的保存及节点关系的匹配，所以理论上Node类是不能单独使用的
  * 所以需要修改结构，让Node类只能被Link类操作，
  * 这时候使用内部类明显是一个最好的选择。
@@ -16,11 +15,12 @@ package com.horsleyli.javalearning.collection;
 /**
  * ***********************************
  * 链表常用方法：
- * public void add(Arg arg)         // 增加数据；
- * public int size()                // 取得链表中保存元素的个数；
- * public boolean isEmpty()         // 判断链表是否为空；
- * public boolean contains(Arg arg) // 判断链表是否包含此数据；
- * public Arg get(int index)        // 根据索引取得数据；
+ * public void add(Arg arg)             // 增加数据；
+ * public int size()                    // 取得链表中保存元素的个数；
+ * public boolean isEmpty()             // 判断链表是否为空；
+ * public boolean contains(Arg arg)     // 判断链表是否包含此数据；
+ * public Arg get(int index)            // 根据索引取得数据；
+ * public void set(int index, Arg arg)  // 修改指定索引的数据；
  **/
 
 public class LinkDemo2 {
@@ -35,8 +35,35 @@ public class LinkDemo2 {
 
         System.out.println("link.getSize(): " + link.getSize());                // 获取链表中保存的数据量
         System.out.println("link.isEmpty(): " + link.isEmpty());                // 判断链表是否为空
-        System.out.println("ling.contains(\"2\"): " + link.contains("2"));      // 判断链表中是否包含此数据
-        System.out.println("ling.contains(\"4\"): " + link.contains("4"));
+        System.out.println("link.contains(\"2\"): " + link.contains("2"));      // 判断链表中是否包含此数据
+        System.out.println("link.contains(\"4\"): " + link.contains("4"));
+        System.out.println("link.get(0): " + link.get(0));                      // 根据索引获取对应的值
+        System.out.println("link.get(4): " + link.get(4));
+
+        String tryGetLink5 = "link.get(5): ";
+        try {
+            System.out.println(tryGetLink5 + link.get(5));
+        } catch (IndexOutOfBoundsException IOOBException) {
+            System.out.println(tryGetLink5 + IOOBException.getMessage());
+        }
+
+        link.set(0, "head");                      // 根据索引修改对应元素的值
+        System.out.println("link.get(0): " + link.get(0));
+        link.set(4, "emm");                      // 根据索引获取对应的值
+        System.out.println("link.get(4): " + link.get(4));
+
+        String trySetLink5 = "link.set(5): ";
+        try {
+            link.set(5, "ha233");
+        } catch (IndexOutOfBoundsException IOOBException) {
+            System.out.println(tryGetLink5 + IOOBException.getMessage());
+        }
+
+        // 恢复原来的数据
+        link.set(0, "root");
+        System.out.println("link.get(0): " + link.get(0));
+        link.set(4, "end");
+        System.out.println("link.get(4): " + link.get(4));
     }
 }
 
@@ -78,11 +105,39 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
                 }
             }
         }
+
+        private String getNode(int index) {
+            // 使用当前的foot与要查询的索引进行比较，随后将foot + 1，目的是为了方便下次查询
+            // 也就是：
+            //  1.(判断foot == index)
+            //  2.(foot++)
+            // 这两步操作
+            if (foot++ == index) {  // 如果相等（foot == index），则该节点的下标就是要修改元素的索引（就是要找这个节点(Just You!)）
+                return this.data;   // 返回当前节点的data
+            } else {
+                if (this.next != null) {  // ??已经不需要再进行判断了，因为在Link.get()方法中已经进行过判断了?? //
+                    return this.next.getNode(index);
+                } else {
+                    throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + (size - 1));
+                }
+            }
+        }
+
+        private void setNode(int index, String newData) {
+            if (foot++ == index) {  // 如果相等（foot == index），则该节点的下标就是要修改元素的索引（就是要找这个节点(Just You!)）
+                this.data = newData;   // 修改当前节点的data
+            } else {
+                if (this.next != null) {
+                    this.next.setNode(index, newData);
+                } else {  // ??已经不需要再进行判断了，因为在Link.set()方法中已经进行过判断了?? //
+                    throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + (size - 1));
+                }
+            }
+        }
     }
     /* ===================== 以上为内部类 ===================== */
 
-    private Node root;           // 根节点
-    private int size = 0;                 // 保存的元素个数
+    private Node root;  // 根节点
 
     public void add(String data) {    // 添加节点
         if (data == null) {
@@ -98,6 +153,8 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
         this.size++;   // 每一次保存成功后size + 1;
     }
 
+    private int size = 0;   // 保存的元素个数
+
     public int getSize() {
         return this.size;   // 返回size
     }
@@ -107,9 +164,9 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
          * 两种判断方法：
          * * 一、root是否为null；
          * * 二、size是否为0；
-         * 这里采取的是第二种（参照String类）
+         * 这里是两种都用(233)
          * */
-        return size == 0;
+        return (this.size == 0) && (this.root == null);
     }
 
     public boolean contains(String data) {    // 用data进行比较
@@ -123,6 +180,42 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
             return false;   // 如果比较和被比较的数据为空，则直接返回false
         } else {
             return root.containsNode(data);
+        }
+    }
+
+    private int foot = 0;
+
+    public String get(int index) {    // 根据索引取得数据
+        /*
+         * 我们可以发现，这个链表Demo里保存了多个String对象，原本在程序里只有数组可以保存数据，
+         * 但现在使用的链表与数组相比较的话，优势就是没有长度限制，所以链表严格意义上来讲就是一个动态对象数组，
+         * 既然属于动态对象数组，那么也应该具备像数组那样可以根据索引取得元素的功能
+         * 这是get(int index)方法
+         * 既然是动态数组，那么数据也应该是动态的（可以进行增删改）
+         * */
+
+        /*
+         * 范例：在Link类里增加一个foot（下标）的属性，表示每一个Node元素的编号，当然，此编号是自动生成的
+         * 每一查询的时候（链表可以查询多次），那么foot应该在每一次查询的时候都从头开始
+         * 但只能在以下情况下才能查询：
+         * * 一、index >= 0；
+         * * 二、index < size；
+         * */
+        this.foot = 0;
+        if (index >= 0 || index < this.size) {  // 当输入的索引正确时才能进行查询
+            return this.root.getNode(index);    // 交给Node类进行查询
+        } else {    // 否则就抛出异常（╯°Д°）╯︵ ┻━┻
+            throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + this.size);
+        }
+    }
+
+    public void set(int index, String newData) {
+        // 修改和查询的区别不大，查询的时候只是返回满足索引值的数据，而修改只是数据的返回变成重新赋值而已
+        if (index >= 0 || index < this.size) {  // 当输入的索引正确时才能进行修改
+            this.foot = 0; // 重新设置foot值
+            this.root.setNode(index, newData);   // 交给Node类去进行操作
+        } else {    // 如果索引不对就抛出异常（╯°Д°）╯︵ ┻━┻
+            throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + this.size); // 如果索引不对则抛出错误
         }
     }
 }
