@@ -208,7 +208,7 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
         if (index >= 0 || index < this.size) {  // 当输入的索引正确时才能进行查询
             return this.root.getNode(index);    // 交给Node类进行查询
         } else {    // 否则就抛出异常（╯°Д°）╯︵ ┻━┻
-            throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + this.size);
+            throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + (this.size - 1));
         }
     }
 
@@ -218,9 +218,10 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
             this.foot = 0; // 重新设置foot值
             this.root.setNode(index, newData);   // 交给Node类去进行操作
         } else {    // 如果索引不对就抛出异常（╯°Д°）╯︵ ┻━┻
-            throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + this.size); // 如果索引不对则抛出错误
+            throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + (this.size - 1)); // 如果索引不对则抛出错误
         }
     }
+<<<<<<< HEAD
 
     public void remove(String data) {
         // TODO
@@ -231,3 +232,6 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
         return new String[0];
     }
 }
+=======
+}
+>>>>>>> 13667e9dbcc02e2989ba2f09961ee4a4f15405b2
