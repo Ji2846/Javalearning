@@ -21,7 +21,9 @@ package com.horsleyli.javalearning.collection;
  * public boolean contains(Arg arg)     // 判断链表是否包含此数据；
  * public Arg get(int index)            // 根据索引取得数据；
  * public void set(int index, Arg arg)  // 修改指定索引的数据；
- *
+ * public void remove(Arg arg)          // 删除指定的元素；
+ * public Arg[] toArray()               // 将链表转成数组；
+ * 
  **/
 
 public class LinkDemo2 {
@@ -218,5 +220,14 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
         } else {    // 如果索引不对就抛出异常（╯°Д°）╯︵ ┻━┻
             throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + this.size); // 如果索引不对则抛出错误
         }
+    }
+
+    public void remove(String data) {
+        // TODO
+    }
+
+    public String[] toArray() {
+        // TODO
+        return new String[0];
     }
 }
