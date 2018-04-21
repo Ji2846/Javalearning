@@ -23,7 +23,6 @@ package com.horsleyli.javalearning.collection;
  * public void set(int index, Arg arg)  // 修改指定索引的数据；
  * public void remove(Arg arg)          // 删除指定的元素；
  * public Arg[] toArray()               // 将链表转成数组；
- * 
  **/
 
 public class LinkDemo2 {
@@ -221,7 +220,6 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
             throw new IndexOutOfBoundsException("输入的索引不正确，必须大于等于0，且小于" + (this.size - 1)); // 如果索引不对则抛出错误
         }
     }
-<<<<<<< HEAD
 
     public void remove(String data) {
         // TODO
@@ -232,6 +230,3 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
         return new String[0];
     }
 }
-=======
-}
->>>>>>> 13667e9dbcc02e2989ba2f09961ee4a4f15405b2
