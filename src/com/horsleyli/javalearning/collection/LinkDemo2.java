@@ -6,7 +6,7 @@ package com.horsleyli.javalearning.collection;
  * 所以需要修改结构，让Node类只能被Link类操作，
  * 这时候使用内部类明显是一个最好的选择。
  * 内部类可以用private定义，这样一来：
- * 一、Nodeiu不能被其它类给修改
+ * 一、Node就不能被其它类给修改
  * 二、内部类还可以很方便的与外部类进行交互
  **/
 
