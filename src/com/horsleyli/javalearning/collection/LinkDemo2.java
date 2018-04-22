@@ -20,8 +20,8 @@ package com.horsleyli.javalearning.collection;
  * public boolean contains(数据类型 数据)     // 判断链表是否包含此数据；
  * public 数据类型 get(int index)            // 根据索引取得数据；
  * public void set(int index, 数据类型 数据)  // 修改指定索引的数据；
- * public void remove(数据类型 数据)          // 删除指定的元素；
- * public 数据类型[] toArray()               // 将链表转成数组；
+ * // TODO:    public void remove(数据类型 数据)          // 删除指定的元素；
+ * // TODO:    public 数据类型[] toArray()               // 将链表转成数组；
  **/
 
 public class LinkDemo2 {
@@ -109,12 +109,12 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
 
         private String getNode(int index) {
             /*
-			  * 使用当前的foot与要查询的索引进行比较，随后将foot + 1，目的是为了方便下次查询
+             * 使用当前的foot与要查询的索引进行比较，随后将foot + 1，目的是为了方便下次查询
              * 也就是：
              * * 1.(判断foot == index)
              * * 2.(foot++)
              * 这两步操作
-			  * */
+	     * */
             if (foot++ == index) {  // 如果相等（foot == index），则该节点的下标就是要修改元素的索引（就是要找这个节点(Just You!)）
                 return this.data;   // 返回当前节点的data
             } else {
