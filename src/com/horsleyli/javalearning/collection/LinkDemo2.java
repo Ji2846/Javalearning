@@ -3,11 +3,10 @@ package com.horsleyli.javalearning.collection;
 /**
  * 开发一个具体可用的链表（增删查改取等基础功能）:
  * Node负责的所有节点数据的保存及节点关系的匹配，所以理论上Node类是不能单独使用的
- * 所以需要修改结构，让Node类只能被Link类操作，
- * 这时候使用内部类明显是一个最好的选择。
+ * 所以需要修改结构，让Node类只能被Link类操作，这时候使用内部类明显是一个最好的选择。
  * 内部类可以用private定义，这样一来：
- * 一、Node就不能被其它类给修改
- * 二、内部类还可以很方便的与外部类进行交互
+ * * 一、Node就不能被其它类给修改
+ * * 二、内部类还可以很方便的与外部类进行交互
  **/
 
 /* =================================== */
@@ -15,14 +14,14 @@ package com.horsleyli.javalearning.collection;
 /**
  * ***********************************
  * 链表常用方法：
- * public void add(Arg arg)             // 增加数据；
+ * public void add(数据类型 数据)             // 增加数据；
  * public int size()                    // 取得链表中保存元素的个数；
  * public boolean isEmpty()             // 判断链表是否为空；
- * public boolean contains(Arg arg)     // 判断链表是否包含此数据；
- * public Arg get(int index)            // 根据索引取得数据；
- * public void set(int index, Arg arg)  // 修改指定索引的数据；
- * public void remove(Arg arg)          // 删除指定的元素；
- * public Arg[] toArray()               // 将链表转成数组；
+ * public boolean contains(数据类型 数据)     // 判断链表是否包含此数据；
+ * public 数据类型 get(int index)            // 根据索引取得数据；
+ * public void set(int index, 数据类型 数据)  // 修改指定索引的数据；
+ * public void remove(数据类型 数据)          // 删除指定的元素；
+ * public 数据类型[] toArray()               // 将链表转成数组；
  **/
 
 public class LinkDemo2 {
@@ -109,11 +108,13 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
         }
 
         private String getNode(int index) {
-            // 使用当前的foot与要查询的索引进行比较，随后将foot + 1，目的是为了方便下次查询
-            // 也就是：
-            //  1.(判断foot == index)
-            //  2.(foot++)
-            // 这两步操作
+            /*
+			  * 使用当前的foot与要查询的索引进行比较，随后将foot + 1，目的是为了方便下次查询
+             * 也就是：
+             * * 1.(判断foot == index)
+             * * 2.(foot++)
+             * 这两步操作
+			  * */
             if (foot++ == index) {  // 如果相等（foot == index），则该节点的下标就是要修改元素的索引（就是要找这个节点(Just You!)）
                 return this.data;   // 返回当前节点的data
             } else {
@@ -222,11 +223,11 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
     }
 
     public void remove(String data) {
-        // TODO
+        // TODO: 未完成
     }
 
     public String[] toArray() {
-        // TODO
+        // TODO: 未完成
         return new String[0];
     }
 }
