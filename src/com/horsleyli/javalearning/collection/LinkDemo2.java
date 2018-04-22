@@ -164,10 +164,10 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
 
     public boolean isEmpty() {
         /*
-         * 两种判断方法：
+         * 判断链表为空的两种方法方法：
          * * 一、root是否为null；
          * * 二、size是否为0；
-         * 这里是两种都用(233)
+         * 这里是两种都用(XD)
          * */
         return (this.size == 0) && (this.root == null);
     }
