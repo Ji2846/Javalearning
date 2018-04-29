@@ -228,6 +228,6 @@ class Link2 {    // 链表类，外部能看到的只有这一个类
 
     public String[] toArray() {
         // TODO: 未完成
-        return new String[0];
+        return null;
     }
 }
