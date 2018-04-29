@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 
 public class SongListDemo {
     public static void main(String[] args) {
-        File songListFile = new File("K:/Java_Projects/JavaLearning/TestFiles/SongList.txt");
+        File songListFile = new File(SongListDemo.class.getResource("SongList.txt").getFile());
         SongListFileReader reader = new SongListFileReader(songListFile);
         ArrayList<Song> songList = reader.getSongList();
         for (Song s : songList) {
