@@ -7,7 +7,7 @@ hs_err_pid*
 
 #### Built Files ####
 *.class
-out/
+/out/
 
 #### Logs Files #####
 /.logs/
