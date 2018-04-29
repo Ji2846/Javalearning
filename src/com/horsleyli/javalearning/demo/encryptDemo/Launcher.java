@@ -7,7 +7,7 @@ import javax.swing.*;
 
 public class Launcher {
     public static void main(String[] args) {
-        File targetFile = new File("K:\\Java_Projects\\JavaLearning\\TestFiles\\EncryptedText.ecpd");
+        File targetFile = new File(Launcher.class.getResource("EncryptedText.ecpd").getFile());
         MainWindow mainWindow = new MainWindow("输入文本并加密保存", targetFile);
         mainWindow.createWindow();
     }
